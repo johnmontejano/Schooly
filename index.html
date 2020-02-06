@@ -16,12 +16,26 @@
 *{
     font-family: Arial;
 }
-
+.footer-row ul>li{
+    list-style-type: none;
+}
+.footer-row a{
+    color: white;
+}
+.copyright{
+    text-align: center;
+    padding: 5px;
+}
 .student-grid{
     background: #0FA3B1;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
+}
+section{
+    -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.75);
 }
 .student-grid a{
     color:white;
@@ -64,7 +78,7 @@
         </div>
         </nav>
     <h1 style="text-align: center;">Student Dashboard</h1>
-    <section  style="background: gray; color:white; padding: 1rem; margin: 2rem;">
+    <section id='student-info' style="background: gray; color:white; padding: 1rem; margin: 2rem;">
         <div class="row">
             <div class="col-3">
                 <img style=" border-radius:100%; width: 80px;"src="https://yt3.ggpht.com/a/AGF-l7_k1lZ2v4ujHYzcZYiTXoBlnLsfsFrsGF1lBg=s288-c-k-c0xffffffff-no-rj-mo" alt="">
@@ -84,5 +98,31 @@
 
         </div>
     </section>
+    <footer style="background: #0FA3B1; color: white; ">
+            <div class="container" style="padding: 1rem;">
+                <div class="footer-row row">
+                    <div class="col">
+                        <h3>SCHOOLY</h3>
+                    </div>
+                    <div class="col">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Assignments</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul>
+                            <li><a href="">Add courses</a></li>
+                            <li><a href="">Careers</a></li>
+                            <li><a href="">Contact Us</a></li>
+                        </ul>    
+                    </div>
+                </div>
+        </div>
+            <div class="copyright" style="background: rgb(9, 110, 119);">
+                    <p>©2020  Schooly. All Rights Reserved.</p>
+            </div>    
+    </footer>            
 </body>
 </html>
